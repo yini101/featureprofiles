@@ -62,3 +62,12 @@ platform_exceptions:  {
     bgp_community_set_refs_unsupported: true
   }
 }
+platform_exceptions:  {
+  platform:  {
+    vendor: ARISTA
+  }
+  deviations:  {
+    omit_l2_mtu: true
+    default_network_instance: "default"
+  }
+}
